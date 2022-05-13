@@ -565,7 +565,7 @@
 
 
     <!---Popup-order--> 
-    <div class="popup popup__order">
+    <div class="popup popup__order" >
         <div class="popup__wrapper">
             <div class="popup__inner">
                 <div class="popup__content ">
@@ -590,7 +590,8 @@
                             <option value="Оплата готівкою">Оплата готівкою</option>
                             <option value="Оплата картою">Оплата картою</option>
                         </select>
-                        <button class="btn form__btn" type="submit">Замовити</button>
+                        <button class="btn form__btn popup__inner" type="submit" data-popup="popup__ok">Замовити</button>
+                        
                     </form>
                     </div>
                     
@@ -600,8 +601,9 @@
         </div>
     </div>
 
-    <div class="popup popup__order " >
-        <div class = "popup__wrapper>
+   
+    <div class="popup popup__ok">
+        <div class = "popup__wrapper">
             <div class="popup__inner">
                 <div class="popup__content ">
                     <button class="btn__close popup__btn-close popup__close"  ></button>
@@ -639,7 +641,7 @@
     <script src="js/product.js"></script>
     <script src="js/maps.js"></script>
     <script src="js/forms.js"></script>
-    
+     
 
     
     
