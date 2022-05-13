@@ -7,15 +7,15 @@
 
     var formSend = function(form) {
        var xhr = new XMLHttpRequest();
-       var url = 'mail/mail.php';
+       var url = 'php/mail.php';
 
        xhr.open('POST', url);
-       xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+      xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
 
        xhr.onload = function() {
-        console.log('done');
+        console.log(xhr.response);
        };
-
+ 
        xhr.send();
 
     };
